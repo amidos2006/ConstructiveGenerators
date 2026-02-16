@@ -16,7 +16,7 @@ if __name__ == "__main__":
     plt.imshow(env.render(level))
     plt.show()
     generator = MazeGenerator()
-    level = generator.generate(level)
+    level = generator.generate(env.content_space.sample())
     plt.imshow(env.render(level))
     plt.show()
 

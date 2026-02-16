@@ -6,7 +6,7 @@ import os
 from PIL import Image
 
 class WFCGenerator(Generator):
-    def __init__(self, img_name="simple_maze", pattern_size=3, trials=10):
+    def __init__(self, img_name="maze", pattern_size=3, trials=10):
         with Image.open(os.path.join(os.path.dirname(__file__), f"imgs/{img_name}.png")) as img:
             self._img = np.array(img)
         self._pattern_size = pattern_size
